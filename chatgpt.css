@@ -1,0 +1,156 @@
+*{
+    margin: 0px 0px 0px 0px ;
+}
+.main-page{
+    display: flex;
+    flex-direction: row;
+}
+
+.left-side{
+    background-color: rgb(250, 250, 208);
+    height: 100vh;
+    width: 60%;
+    font-family: arial;
+}
+
+.right-side{
+    width: 40%;
+}
+
+.top p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: darkorange;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.top{
+    margin-left: 25px;
+    margin-top: 20px;
+}
+
+#circle{
+    font-size: 20px;
+}
+
+
+.mid-section{
+   margin-top: 25%;
+   margin-left: 3%;
+}
+.mid-section h2{
+    font-size: 30px;
+    color: rgb(228, 127, 4);
+}
+
+.mid-section p{
+    color: darkorange;
+    font-size: 33px;
+}
+
+.mid-part{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40%;
+}
+
+.mid-part h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+}
+
+.mid-btns{
+    margin-top: 2%;
+}
+
+.mid-btns button{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 60px;
+    padding-left: 60px;
+    background-color: rgb(2, 2, 221);
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.mid-btns button:hover{
+    background-color: rgb(26, 26, 253);
+}
+
+.mid-btns button:active{
+    background-color: rgb(100, 100, 255);
+}
+.bottom-part{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40%;
+    margin-left: 30%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: rgb(150, 150, 150);
+}
+
+
+.bottom-bottom p{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    text-decoration: underline;
+    margin-left:10px ;
+    cursor: pointer;
+}
+
+.bottom-bottom{
+    margin-top: 10%;
+}
+
+@media only screen and (max-width: 767px) {
+    .main-page{
+        flex-direction: column;
+    }
+    .left-side{
+        width: 100%;
+    }
+    .mid-section{
+        margin-top: 15%;
+    }
+    .bottom-part{
+        width: 100%;
+        margin-left: 0%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .left-side{
+        width: 70%;
+    }
+
+    .mid-section{
+        margin-top: 20%;
+    }
+    .bottom-part{
+        margin-top: 30%;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .left-side{
+        width: 60%;
+    }
+    .mid-section{
+        margin-top: 25%;
+    }
+    .bottom-part{
+        margin-top: 40%;
+        margin-left: 30%;
+    }
+}
